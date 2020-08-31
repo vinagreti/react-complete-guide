@@ -1,7 +1,15 @@
 import React from "react";
 
-const person = ({ age }) => {
-  return <p>I'm a person and I'm {age} years old</p>;
+const person = (props) => {
+  return (
+    <div className="Person">
+      <p onClick={props.click}>
+        I'm {props.name} and I'm {props.age} years old
+      </p>
+      <p>{props.children}</p>
+      <input type="text" onChange={props.changed} value={props.name} />
+    </div>
+  );
 };
 
 export default person;
