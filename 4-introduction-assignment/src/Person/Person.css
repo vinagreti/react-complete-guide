@@ -1,0 +1,9 @@
+.Person {
+  width: 25vw;
+  border: 1px solid black;
+  padding: 16px;
+}
+
+input {
+  max-width: 60px;
+}
